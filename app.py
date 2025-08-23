@@ -8,7 +8,7 @@ POSITIVE_FEELINGS = [
     "Proud", "Accomplished", "Optimistic", "Peaceful", "Content", "Inspired",
     "Creative", "Focused", "Determined", "Hopeful", "Joyful", "Satisfied",
     "Encouraged", "Empowered", "Refreshed", "Calm", "Enthusiastic", "Valued",
-    "Appreciated", "Successful", "Fulfilled", "Balanced", "Curious", "Engaged"
+    "Appreciated", "Successful", "Fulfilled", "Radiant", "Curious", "Engaged"
 ]
 
 NEUTRAL_FEELINGS = [
