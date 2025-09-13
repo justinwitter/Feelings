@@ -6,25 +6,65 @@ from typing import List, Dict
 POSITIVE_FEELINGS = [
     "Excited", "Happy", "Grateful", "Confident", "Energized", "Motivated",
     "Proud", "Accomplished", "Optimistic", "Peaceful", "Content", "Inspired",
-    "Creative", "Focused", "Determined", "Hopeful", "Joyful", "Satisfied",
+    "Creative", "Attentive", "Determined", "Hopeful", "Joyful", "Satisfied",
     "Encouraged", "Empowered", "Refreshed", "Calm", "Enthusiastic", "Valued",
-    "Appreciated", "Successful", "Fulfilled", "Radiant", "Curious", "Engaged"
+    "Appreciated", "Successful", "Fulfilled", "Radiant", "Curious", "Engaged",
+    # Additional positive feelings
+    "Elated", "Thrilled", "Delighted", "Cheerful", "Uplifted", "Invigorated",
+    "Passionate", "Vibrant", "Ambitious", "Triumphant", "Blissful", "Ecstatic",
+    "Exhilarated", "Glowing", "Jovial", "Lively", "Spirited", "Upbeat",
+    "Zealous", "Dynamic", "Fantastic", "Gleeful", "Jubilant", "Magnificent",
+    "Outstanding", "Spectacular", "Wonderful", "Amazing", "Brilliant", "Dazzling",
+    # More positive feelings
+    "Blessed", "Fortunate", "Lucky", "Privileged", "Honored", "Celebrated",
+    "Cherished", "Adored", "Beloved", "Treasured", "Admired", "Respected",
+    "Esteemed", "Revered", "Acclaimed", "Recognized", "Validated", "Affirmed",
+    "Supported", "Nurtured", "Cared-for", "Protected", "Secure", "Safe",
+    "Comfortable", "Cozy", "Warm", "Tender", "Compassionate", "Kind"
 ]
 
+
 NEUTRAL_FEELINGS = [
-    "Steady", "Balanced", "Neutral", "Reflective", "Thoughtful", "Cautious",
+    "Steady", "Equanimous", "Neutral", "Reflective", "Thoughtful", "Cautious",
     "Reserved", "Observant", "Contemplative", "Patient", "Measured", "Stable",
     "Composed", "Centered", "Relaxed", "Quiet", "Mellow", "Even-tempered",
-    "Introspective", "Mindful", "Present", "Accepting", "Realistic", "Practical"
+    "Introspective", "Mindful", "Present", "Accepting", "Realistic", "Practical",
+    # Additional neutral feelings
+    "Consistent", "Levelheaded", "Rational", "Logical", "Reasonable", "Sensible",
+    "Grounded", "Rooted", "Anchored", "Settled", "Established", "Fixed",
+    "Unwavering", "Constant", "Unchanging", "Predictable", "Regular", "Routine",
+    "Ordinary", "Normal", "Typical", "Average", "Standard", "Conventional",
+    "Traditional", "Classic", "Timeless", "Enduring", "Lasting", "Permanent",
+    # More neutral feelings
+    "Detached", "Objective", "Impartial", "Unbiased", "Fair", "Just",
+    "Equitable", "Moderate", "Temperate", "Mild", "Balanced", "Soft",
+    "Subtle", "Understated", "Modest", "Humble", "Simple",
+    "Plain", "Basic", "Fundamental", "Essential", "Core", "Central",
+    "Concentrated", "Attuned", "Attentive-minded", "Alert", "Aware", "Conscious"
 ]
+
 
 CHALLENGING_FEELINGS = [
     "Stressed", "Overwhelmed", "Tired", "Frustrated", "Anxious", "Uncertain",
     "Disappointed", "Concerned", "Worried", "Drained", "Pressured", "Confused",
     "Restless", "Impatient", "Discouraged", "Tense", "Stretched", "Challenged",
     "Conflicted", "Hesitant", "Unsettled", "Burdened", "Scattered", "Depleted",
-    "Apprehensive", "Doubtful", "Weary", "Strained", "Irritated", "Fatigued"
+    "Apprehensive", "Doubtful", "Weary", "Strained", "Irritated", "Fatigued",
+    # Additional challenging feelings
+    "Exhausted", "Burnt-out", "Swamped", "Frazzled", "Frantic", "Panicked",
+    "Distressed", "Troubled", "Disturbed", "Agitated", "Flustered", "Rattled",
+    "Shaken", "Startled", "Alarmed", "Dismayed", "Perturbed", "Vexed",
+    "Annoyed", "Irked", "Bothered", "Aggravated", "Exasperated", "Fed-up",
+    "Disheartened", "Dejected", "Downcast", "Gloomy", "Melancholy", "Somber",
+    # More challenging feelings
+    "Vulnerable", "Exposed", "Raw", "Sensitive", "Fragile", "Delicate",
+    "Unstable", "Shaky", "Unsteady", "Wobbly", "Precarious", "Risky",
+    "Dangerous", "Threatening", "Intimidating", "Scary", "Frightening", "Terrifying",
+    "Horrifying", "Shocking", "Stunning", "Surprising", "Unexpected", "Unpredictable",
+    "Chaotic", "Turbulent", "Stormy", "Tempestuous", "Wild", "Uncontrolled",
+    "Reckless", "Impulsive", "Hasty", "Rushed", "Hurried", "Frenzied"
 ]
+
 
 def generate_balanced_feelings(num_feelings: int) -> List[str]:
     """Generate a balanced mix of positive, neutral, and challenging feelings."""
