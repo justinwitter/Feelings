@@ -4,29 +4,42 @@ from typing import List, Dict
 
 # Define balanced lists of feelings
 POSITIVE_FEELINGS = [
-    "energized","motivated","productive","accomplished","focused","optimistic","confident","grateful","fulfilled","balanced",
-    "calm","excited","hopeful","inspired","content","relieved","refreshed","engaged","driven","clear-headed",
-    "organized","encouraged","satisfied","steady","uplifted","positive","successful","happy","proud","creative",
-    "resilient","supported","relaxed","enthusiastic","grounded","aligned","efficient","flowing","capable","on-track",
-    "winning","comfortable","light","clear","fulfilled-with-progress","mentally-sharp","clear-minded","effective","in-control"
+    "happy", "excited", "grateful", "optimistic", "energized",
+    "motivated", "confident", "peaceful", "content", "joyful",
+    "inspired", "accomplished", "proud", "hopeful", "enthusiastic",
+    "relaxed", "fulfilled", "cheerful", "refreshed", "blessed",
+    "appreciated", "loved", "supported", "productive", "successful",
+    "thriving", "empowered", "creative", "focused", "balanced",
+    "rejuvenated", "lucky", "satisfied", "elated", "relieved",
+    "amazed", "delighted", "wonderful", "fantastic", "great",
+    "upbeat", "vibrant", "lively", "spirited", "radiant",
+    "blissful", "ecstatic", "exhilarated", "triumphant", "unstoppable"
 ]
 
 NEUTRAL_FEELINGS = [
-    "okay","fine","neutral","steady","average","routine","normal","uneventful","predictable","balanced",
-    "meh","unchanged","stable","quiet","plain","unremarkable","functional","adequate","moderate","indifferent",
-    "so-so","passable","maintained","coasting","flat","low-key","regular","consistent","acceptable","expected",
-    "business-as-usual","status-quo","middle-of-the-road","fine-enough","nothing-special","day-to-day","baseline",
-    "steady-paced","managed","unexciting","average-energy","not-bad-not-great","routine-heavy","holding-constant",
-    "uneventful-but-okay","just-going","neutral-positive","neutral-negative","same-as-usual","okay-enough"
+    "okay", "fine", "alright", "steady", "unchanged",
+    "routine", "ordinary", "uneventful", "calm", "stable",
+    "moderate", "so-so", "average", "unremarkable", "typical",
+    "predictable", "consistent", "manageable", "fair", "decent",
+    "balanced", "mellow", "indifferent", "passive", "detached",
+    "observant", "contemplative", "pensive", "reflective", "thoughtful",
+    "patient", "waiting", "uncertain", "undecided", "mixed",
+    "ambivalent", "hesitant", "cautious", "reserved", "quiet",
+    "subdued", "flat", "neutral", "numb", "blank",
+    "accepting", "resigned", "unbothered", "unaffected", "coasting"
 ]
 
 CHALLENGING_FEELINGS = [
-    "tired","stressed","overwhelmed","frustrated","burned-out","unmotivated","anxious","drained","behind","scattered",
-    "foggy","irritated","exhausted","discouraged","tense","pressured","unfocused","rushed","stuck","disappointed",
-    "fatigued","restless","low-energy","unproductive","frazzled","strained","distracted","worn-down","overloaded",
-    "uneasy","deflated","demotivated","sluggish","burnt","checked-out","overworked","heavy","chaotic","stale","cranky",
-    "behind-schedule","mentally-taxed","running-on-empty","underwater","boxed-in","friction-filled","overextended",
-    "frantic","drained-again","time-crunched"
+    "stressed", "anxious", "overwhelmed", "exhausted", "frustrated",
+    "disappointed", "sad", "tired", "drained", "worried",
+    "irritated", "annoyed", "burnt out", "discouraged", "lonely",
+    "unmotivated", "hopeless", "defeated", "miserable", "depressed",
+    "angry", "resentful", "bitter", "insecure", "fearful",
+    "nervous", "restless", "impatient", "dissatisfied", "unfulfilled",
+    "bored", "stuck", "lost", "confused", "helpless",
+    "inadequate", "guilty", "ashamed", "embarrassed", "regretful",
+    "heartbroken", "jealous", "envious", "neglected", "undervalued",
+    "overworked", "pressured", "tense", "agitated", "terrible"
 ]
 
 
