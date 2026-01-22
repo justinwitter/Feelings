@@ -4,66 +4,32 @@ from typing import List, Dict
 
 # Define balanced lists of feelings
 POSITIVE_FEELINGS = [
-    "Excited", "Happy", "Grateful", "Confident", "Energized", "Motivated",
-    "Proud", "Accomplished", "Optimistic", "Peaceful", "Content", "Inspired",
-    "Creative", "Attentive", "Determined", "Hopeful", "Joyful", "Satisfied",
-    "Encouraged", "Empowered", "Refreshed", "Calm", "Enthusiastic", "Valued",
-    "Appreciated", "Successful", "Fulfilled", "Radiant", "Curious", "Engaged",
-    # Additional positive feelings
-    "Elated", "Thrilled", "Delighted", "Cheerful", "Uplifted", "Invigorated",
-    "Passionate", "Vibrant", "Ambitious", "Triumphant", "Blissful", "Ecstatic",
-    "Exhilarated", "Glowing", "Jovial", "Lively", "Spirited", "Upbeat",
-    "Zealous", "Dynamic", "Fantastic", "Gleeful", "Jubilant", "Magnificent",
-    "Outstanding", "Spectacular", "Wonderful", "Amazing", "Brilliant", "Dazzling",
-    # More positive feelings
-    "Blessed", "Fortunate", "Lucky", "Privileged", "Honored", "Celebrated",
-    "Cherished", "Adored", "Beloved", "Treasured", "Admired", "Respected",
-    "Esteemed", "Revered", "Acclaimed", "Recognized", "Validated", "Affirmed",
-    "Supported", "Nurtured", "Cared-for", "Protected", "Secure", "Safe",
-    "Comfortable", "Cozy", "Warm", "Tender", "Compassionate", "Kind"
+    "energized","motivated","productive","accomplished","focused","optimistic","confident","grateful","fulfilled","balanced",
+    "calm","excited","hopeful","inspired","content","relieved","refreshed","engaged","driven","clear-headed",
+    "organized","encouraged","satisfied","steady","uplifted","positive","successful","happy","proud","creative",
+    "resilient","supported","relaxed","enthusiastic","grounded","aligned","efficient","flowing","capable","on-track",
+    "winning","comfortable","light","clear","fulfilled-with-progress","mentally-sharp","clear-minded","effective","in-control"
 ]
-
 
 NEUTRAL_FEELINGS = [
-    "Steady", "Equanimous", "Neutral", "Reflective", "Thoughtful", "Cautious",
-    "Reserved", "Observant", "Contemplative", "Patient", "Measured", "Stable",
-    "Composed", "Centered", "Relaxed", "Quiet", "Mellow", "Even-tempered",
-    "Introspective", "Mindful", "Present", "Accepting", "Realistic", "Practical",
-    # Additional neutral feelings
-    "Consistent", "Levelheaded", "Rational", "Logical", "Reasonable", "Sensible",
-    "Grounded", "Rooted", "Anchored", "Settled", "Established", "Fixed",
-    "Unwavering", "Constant", "Unchanging", "Predictable", "Regular", "Routine",
-    "Ordinary", "Normal", "Typical", "Average", "Standard", "Conventional",
-    "Traditional", "Classic", "Timeless", "Enduring", "Lasting", "Permanent",
-    # More neutral feelings
-    "Detached", "Objective", "Impartial", "Unbiased", "Fair", "Just",
-    "Equitable", "Moderate", "Temperate", "Mild", "Balanced", "Soft",
-    "Subtle", "Understated", "Modest", "Humble", "Simple",
-    "Plain", "Basic", "Fundamental", "Essential", "Core", "Central",
-    "Concentrated", "Attuned", "Attentive-minded", "Alert", "Aware", "Conscious"
+    "okay","fine","neutral","steady","average","routine","normal","uneventful","predictable","balanced",
+    "meh","unchanged","stable","quiet","plain","unremarkable","functional","adequate","moderate","indifferent",
+    "so-so","passable","maintained","coasting","flat","low-key","regular","consistent","acceptable","expected",
+    "business-as-usual","status-quo","middle-of-the-road","fine-enough","nothing-special","day-to-day","baseline",
+    "steady-paced","managed","unexciting","average-energy","not-bad-not-great","routine-heavy","holding-constant",
+    "uneventful-but-okay","just-going","neutral-positive","neutral-negative","same-as-usual","okay-enough"
 ]
-
 
 CHALLENGING_FEELINGS = [
-    "Stressed", "Overwhelmed", "Tired", "Frustrated", "Anxious", "Uncertain",
-    "Disappointed", "Concerned", "Worried", "Drained", "Pressured", "Confused",
-    "Restless", "Impatient", "Discouraged", "Tense", "Stretched", "Challenged",
-    "Conflicted", "Hesitant", "Unsettled", "Burdened", "Scattered", "Depleted",
-    "Apprehensive", "Doubtful", "Weary", "Strained", "Irritated", "Fatigued",
-    # Additional challenging feelings
-    "Exhausted", "Burnt-out", "Swamped", "Frazzled", "Frantic", "Panicked",
-    "Distressed", "Troubled", "Disturbed", "Agitated", "Flustered", "Rattled",
-    "Shaken", "Startled", "Alarmed", "Dismayed", "Perturbed", "Vexed",
-    "Annoyed", "Irked", "Bothered", "Aggravated", "Exasperated", "Fed-up",
-    "Disheartened", "Dejected", "Downcast", "Gloomy", "Melancholy", "Somber",
-    # More challenging feelings
-    "Vulnerable", "Exposed", "Raw", "Sensitive", "Fragile", "Delicate",
-    "Unstable", "Shaky", "Unsteady", "Wobbly", "Precarious", "Risky",
-    "Dangerous", "Threatening", "Intimidating", "Scary", "Frightening", "Terrifying",
-    "Horrifying", "Shocking", "Stunning", "Surprising", "Unexpected", "Unpredictable",
-    "Chaotic", "Turbulent", "Stormy", "Tempestuous", "Wild", "Uncontrolled",
-    "Reckless", "Impulsive", "Hasty", "Rushed", "Hurried", "Frenzied"
+    "tired","stressed","overwhelmed","frustrated","burned-out","unmotivated","anxious","drained","behind","scattered",
+    "foggy","irritated","exhausted","discouraged","tense","pressured","unfocused","rushed","stuck","disappointed",
+    "fatigued","restless","low-energy","unproductive","frazzled","strained","distracted","worn-down","overloaded",
+    "uneasy","deflated","demotivated","sluggish","burnt","checked-out","overworked","heavy","chaotic","stale","cranky",
+    "behind-schedule","mentally-taxed","running-on-empty","underwater","boxed-in","friction-filled","overextended",
+    "frantic","drained-again","time-crunched"
 ]
+
+
 
 
 def generate_balanced_feelings(num_feelings: int) -> List[str]:
